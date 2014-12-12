@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,600,700,300); 
+
+body {background: #f5f5f5;}
+body,input,textarea,select {color: #3b3e42; font-family: "Roboto",Arial,sans-serif; font-size: 14px; line-height: 21px;}
+body.overlap #iframe-wrapper {top: 0; height: 100%;}
+
+a {text-decoration: none; color: inherit; transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;}
+a:hover {color: #e7746f;}
+
+.button {display: inline-block; height: 2.75em; line-height: 2.7em; padding: 0 1.5em 0 1.5em; border-radius: 4px; text-decoration: none; font-weight: normal; border: solid 0px #dee0e3;}
+.button:hover {border-color: #e7746f; color: #e7746f;}
+
+.selector i{font-size:21px; line-height:30px; margin-right:5px; vertical-align: middle;}
+.url-field{border:0; background:transparent; width:225px;}
+.go-btn{background:transparent; border:0; border-radius:none; cursor:pointer; padding:0; position: relative; color:#3b3e42;}	
+ul.selector, ul.selector-2{margin-left:4px; margin-right:4px;}
+ul.selector, ul.selector-2 {display: inline-block; height: 2.75em; line-height: 2.7em; padding: 0; text-decoration: none; font-weight: normal; color: inherit; position:relative;  background:#fff; -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3); -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3); box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);}
+ul.selector li , ul.selector-2 li {position: relative; display: block; float: left; overflow: hidden; padding: 0 1em 0 1em; transition: all 0.2s ease-in-out; height: 2.75em;}
+ul.selector li{cursor: pointer;}
+ul.selector li:first-child {}
+ul.selector li:last-child {}
+ul.selector li:hover {background: #f2f4f7; color:#fff;}
+ul.selector li.active {background: #474d59; color: #fff;}
+
+#iframe-wrapper {position: fixed; background: #f5f5f5; top: 3.375em; left: 0; width: 100%; height: calc(100% - 3.375em); opacity: 1.0; border-radius: 10px; transition: all 0.5s ease-in-out;}
+#iframe-wrapper iframe {position: absolute; left: 0; top: 0; width: 100%; height: 100%; transition: all 0.5s ease-in-out; overflow-x: hidden;}
+#iframe-wrapper.loading {}
+#iframe-wrapper.loading iframe {opacity: 0;}
+#iframe-wrapper.framed {box-shadow: 0 0 0 29px #fff, 0 0 0 30px #dee0e3;}
+#iframe-wrapper.framed iframe {box-shadow: 0 0 0 1px #fff; }
+#header {position: fixed; left: 0; top: 0; width: 100%; background: #f5f5f5; z-index: 10000; height: 3.75em; transition: top 0.25s ease-in-out; font-size: 0.9em; z-index: 10000; cursor: default; box-shadow: none;}
+#header .left {text-align:center; margin-top: 0.5em;}
+#header .left .selector {margin-left:auto; margin-right:auto;} 
+#header .selector li{}
+#header .selector li:hover {background: #676d79;}
+#header .selector li.active {background: #474d59;}
